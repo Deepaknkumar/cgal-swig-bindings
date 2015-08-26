@@ -23,25 +23,22 @@ c1 = new_Curve_2(s1);
  
 
  
-cgal.Arrangement_2.number_of_halfedges(a1)
+cgal.Arrangement_2.number_of_verts_at_infty(a1)
  ans  =
  
     0.  
  
-face_hndl = cgal.Arrangement_2.fictitious_face(a1);
+vertex_hndl = cgal.Arrangement_2.insert_in_face_interior(a1,p1,face_hndl);
  
-halfedge_hndl = cgal.Arrangement_2.insert_in_face_interior(a1,c1,face_hndl);
- 
-vertex_hndl = cgal.Arrangement_2.insert_in_face_interior(a1,p2,face_hndl)
- vertex_hndl  =
- 
- 
-halfedge_hndl1 = cgal.Arrangement_2.insert_from_left_vertex(a1,c1,vertex_hndl)
- halfedge_hndl1  =
- 
- 
-cgal.Arrangement_2.number_of_halfedges(a1)
+cgal.Arrangement_2.number_of_verts_at_infty(a1)
  ans  =
  
-    2.  
+    0.  
+ 
+vertex_hndl = cgal.Arrangement_2.insert_in_face_interior(a1,p2,face_hndl);
+ 
+cgal.Arrangement_2.number_of_verts_at_infty(a1)
+ ans  =
+ 
+    0.  
  
