@@ -35,5 +35,7 @@
 #include <SWIG_CGAL/Kernel/Weighted_point_3.h>
 #include <SWIG_CGAL/Kernel/Bbox_2.h>
 #include <SWIG_CGAL/Kernel/Bbox_3.h>
+#include <SWIG_CGAL/Kernel/freefunc.h>
+//#include <SWIG_CGAL/Kernel/PointLocation.h>
 
 #endif //SWIG_CGAL_KERNEL_ALL_INCLUDES_H
